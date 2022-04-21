@@ -36,10 +36,10 @@ describe("RegCheck", function() {
 
     //MPUMALANGA
     describe("MPUMALANGA", function() {
-    it("should return true if registration ends with MP", function() {
+    it("should return true if registration number ends with MP", function() {
         assert.equal(regCheck("FGT 123 MP", "MP"), true);
     });
-    it("should return false if registration does not end with MP", function() {
+    it("should return false if registration number does not end with MP", function() {
         assert.equal(regCheck("FGT 123 GP", "MP"), false);
     });
 });
