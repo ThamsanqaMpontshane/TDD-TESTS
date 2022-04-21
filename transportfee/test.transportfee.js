@@ -1,14 +1,14 @@
 describe("TransportFee", function() {
        
-     it("Morning Shift" ,function(){
+     it("The Transport Fee For Morning Shift" ,function(){
         assert.equal(transportFee('morning'), 'R20');
      });
 
-     it("AfterNoon Shift", function(){
+     it("The Transport Fee For AfterNoon Shift", function(){
         assert.equal(transportFee('afternoon'), 'R10');
      });
 
-     it("NightShift", function(){
+     it("The Transport Fee For NightShift", function(){
         assert.equal(transportFee('nightshift'), 'free', 'for night shift return free');
      });
 

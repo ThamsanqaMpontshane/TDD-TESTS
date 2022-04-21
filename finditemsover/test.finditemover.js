@@ -35,7 +35,7 @@ describe("FindItemsOver", function() {
 
   
    
-    it("should return items with threshhold > 20", function() {
+    it("should return items with threshhold > 20 for the quantity of available items", function() {
     assert.deepEqual(results, findItemsOver(itemList, 20));
     assert.deepEqual(results2, findItemsOver(itemList2, 20));
     assert.deepEqual(results3, findItemsOver(itemList3, 20));
@@ -79,7 +79,7 @@ describe("FindItemsOver20", function() {
     ];
 
 
-    it("should return items with quantity 20", function() {
+    it("should return items with quantity over 20", function() {
     assert.deepEqual(results, findItemsOver20(itemList));
     assert.deepEqual(results2, findItemsOver20(itemList2));
     assert.deepEqual(results3, findItemsOver20(itemList3));

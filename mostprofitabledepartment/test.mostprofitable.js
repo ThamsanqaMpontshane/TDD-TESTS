@@ -39,10 +39,10 @@ describe("Most Profitable Department", function() {
         {department : 'carpentry', sales : 8009, day : 'Wednesday'},
     ];
     
-    it("should return the most profitable department for salesData", function() {
+    it("should return the most profitable shop department for salesData", function() {
         assert.equal(mostProfitableDepartment(salesData), "outdoor", "Most profitable department is 'outdoor' for dataset 1");
     });
-    it("should return the most profitable department for salesData2", function() {
+    it("should return the most profitable shop department for salesData2", function() {
         assert.equal(mostProfitableDepartment(salesData2), "electronics", "Most profitable department is 'electronics' for dataset 2");
     });
 });
